@@ -89,3 +89,31 @@ Weirdest thing guys: Literal values are objects! Mindbending.
 
 # Obvs it's 2n + 1, but why?
 ```
+
+## Koan 4: Arrays
+
+:astonished: Built it Arrays! Native abstract data types!
+
+There's an insertion(?) operator: `<<`
+
+Arrays are 0 indexed and can accept negative indices for reverse access. How do they handle out of bounds? ... They give `nil`.
+
+Array slicing: appears to be `array[start, length]`. This is valid: `length >= 0` with no upper bound. If there are no more elements, it only gives what it has. It seems that if `start == array.size` then it gives an empty array. What about negative slices? ... `-array.size <= start <= array.size` and `length` cannot be negative. Also, the slice parameter doesn't accept a step option.
+
+Ranges can be inclusive or exclusive:
+
+```ruby
+(a..b)  # interval equivalent: [a,b]
+(a...b) # interval equivalent: [a,b)
+```
+
+Oddly, a negative value, doesn't do much:
+
+```ruby
+(2..-1).to_a  # => []
+(-5...0).to_a # => [-5, -4, -3, -2, -1]
+```
+
+Ranges are weird, dude.
+
+Arrays can be heterogeneous. They also have methods for deque operations. I wonder what their time-space complexities are.
