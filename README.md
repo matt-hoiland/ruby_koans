@@ -181,3 +181,7 @@ The `String#<<` operator behaves differently than `String#+=`.
 Array slicing works for strings also in the same manner. `String#split` works as expected, accepting a regex as delimiters. `Array#join` is its counterpart.
 
 `String#==` is defined properly.
+
+## Koan 8: Symbols
+
+Symbols are singletons. Method names are symbols. Identifiers are also symbols.
