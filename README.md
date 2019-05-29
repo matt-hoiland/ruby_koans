@@ -67,12 +67,25 @@ Ruby uses exceptions; that's good to know. First exception foudn: `NoMethodError
 
 `nil` is a singleton. It's documentation is here: [NilClass](http://ruby-doc.org/core-2.6.3/NilClass.html). It's got some interesting methods on it. It also has an interesting `object_id`: `8`.
 
-> THINK ABOUT IT:
->
-> Is it better to use
->    obj.nil?
-> or
->    obj == nil
-> Why?
-> 
-> Answer: `#==` can be overridden by a class. `#nil?` is defined from `Object` on down. Calling it will not cause a... whatever this language calls a null pointer exception. It appears that everything is an object.
+```ruby
+# THINK ABOUT IT:
+#
+# Is it better to use
+#    obj.nil?
+# or
+#    obj == nil
+# Why?
+
+# Answer: `#==` can be overridden by a class. `#nil?` is defined from `Object` on down. Calling it will not cause a... whatever this language calls a null pointer exception. It appears that everything is an object.
+```
+
+## Koan 3: Objects
+
+Weirdest thing guys: Literal values are objects! Mindbending.
+
+```ruby
+# THINK ABOUT IT:
+# What pattern do the object IDs for small integers follow?
+
+# Obvs it's 2n + 1, but why?
+```
