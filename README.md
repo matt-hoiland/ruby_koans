@@ -201,3 +201,17 @@ Useful string functions for regexps:
 - `String#gsub` - Find and replace all
 
 ## Koan 10: Methods
+
+Method parentheses are optional unless it causes a syntax ambiguity. Argument count is a runtime error.
+
+Some questions:
+
+- Is the class of a method the same as its return type?
+- With default arguments and variadic lists, what are the precedences? What are the restrictions on order?
+
+Some notes:
+
+- The rest operator (`*`) allows for variadic parameter lists.
+- Arguments can be defaulted
+- Methods return the value of the last evaluated expression if not explicitly declared
+- Using explicit receivers is involved in determining access permissions
