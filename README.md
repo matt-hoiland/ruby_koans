@@ -34,3 +34,27 @@ This is not at all a comprehensive or rigorous set of questions to use when lear
 I've replaced the original README for this document. This will be my running journal where I record my insights and answers. I'm starting at the top, no matter how basic it may seem.
 
 I have also allowed my VCS to track the `koans/` directory itself (untracked by default) so that I can compare my changes and revert as necessary.
+
+## Koan 1: Assertions
+
+`assert` and `assert_equal` are clearly methods. I have a few questions:
+
+- How are the signatures defined?
+- Do they expect certain types?
+- How are parameters made optional and/or methods overloaded?
+
+Let's break a bit.
+
+```ruby
+assert 'hi' # => passed just fine
+assert 0    # => passed just fine
+assert nil  # => failed test
+```
+
+It seems that certain values have truthy and falsy interpretations.
+
+```ruby
+assert_equal one_value # => (given 1, expected 2..3)
+```
+
+Functions require a certain number of arguments.
