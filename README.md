@@ -120,4 +120,26 @@ Arrays can be heterogeneous. They also have methods for deque operations. I wond
 
 ## Kaon 5: Array Assignment
 
-Arrays can be destructured! Coolio!
+Arrays can be destructured! Coolio! And with a rest and spread operators! Destructuring doesn't require all variables to be present, like other languages with destructuring.
+
+## Koan 6: Hashes (aka Python `dict` and JavaScript `Object`)
+
+These examples map symbols to strings. Does the key *have* to be a symbol? Apparently not. `test_combining_hashes` uses string -> number.
+
+Hashes can be accessed using the "indexing operator" or `Hash#fetch`.
+
+```ruby
+# THINK ABOUT IT:
+#
+# Why might you want to use #fetch instead of #[] when accessing hash keys?
+
+# Answer: A key could be intentionally mapped to nil, and fetch will not raise
+# the error in that case. Fetch *will* raise the error when the key doesn't
+# exist.
+```
+
+!! Hashes are unordered. Literals with correct key-value mappings in any order are equal.
+
+Key existence can also be checked with `Array#include?` since `Hash#keys` gives an instance of `Array`. The equivalent is also true for `Hash#values`.
+
+`Hash#new` can accept a default value for index-like accesses. Another reason now to use `nil == hash[:doesnt_exist]` to test for key existence. The hash's default value could be something other than `nil`. The default value is a reference to the same object, however, so be careful. `Hash#new` can accept a block for initialization however.
