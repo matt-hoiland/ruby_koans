@@ -143,3 +143,41 @@ Hashes can be accessed using the "indexing operator" or `Hash#fetch`.
 Key existence can also be checked with `Array#include?` since `Hash#keys` gives an instance of `Array`. The equivalent is also true for `Hash#values`.
 
 `Hash#new` can accept a default value for index-like accesses. Another reason now to use `nil == hash[:doesnt_exist]` to test for key existence. The hash's default value could be something other than `nil`. The default value is a reference to the same object, however, so be careful. `Hash#new` can accept a block for initialization however.
+
+## Koan 7: Strings
+
+There are several ways to create a string literal:
+
+- Double quotes: `"I'm a string."`
+- Single quotes: `'I am also a string.'`
+- Flexible quoting: `%(I guess I'm a string.)` `%!I'm a string.!` `%{I'm a string as well!}`
+- Here Documents:
+
+```
+<<EOS
+This is a string
+EOS
+```
+
+They are __not__ equivalent however. Here are some differences:
+
+- Double Quotes:
+  - Use conventional escape sequences: `\n`, `\t`, `\"`, etc
+  - Interpolate values: `"#{2 + 2}" == "4"`
+- Single Quotes:
+  - Only escape a few sequences: `\'` and `\\`
+  - Do not interpolate
+- Flexible Quotes:
+  - Can be multiple lines, captures all characters between delimiters.
+  - Escapes conventional sequences
+  - Interpolate values
+- Here Documents:
+  - Interpolate values
+  - Require opening and closing delimiters to be on their own line, with no whitespace preceding the closing delimiter.
+  - Capture characters on the lines between the delimiters.
+
+The `String#<<` operator behaves differently than `String#+=`.
+
+Array slicing works for strings also in the same manner. `String#split` works as expected, accepting a regex as delimiters. `Array#join` is its counterpart.
+
+`String#==` is defined properly.
