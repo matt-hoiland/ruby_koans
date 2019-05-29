@@ -187,3 +187,17 @@ Array slicing works for strings also in the same manner. `String#split` works as
 Symbols are singletons. Method names are symbols. Identifiers are also symbols.
 
 Passing a symbol literal to `Symbol#all_symbols#include` will always be true because the symbol literal exists.
+
+## Koan 9: Regular Expressions
+
+That's surprising. You can use the indexing operator with a regexp.
+
+Capture groups are very interesting. I want to know how they get initialized.
+
+Useful string functions for regexps:
+
+- `String#scan` - Find all
+- `String#sub` - Find and replace
+- `String#gsub` - Find and replace all
+
+## Koan 10: Methods
