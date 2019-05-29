@@ -46,6 +46,7 @@ class AboutSymbols < Neo::Koan
       # mine
       my_var = 5
       assert_equal true, all_symbols_as_strings.include?("my_var")
+      assert_equal true, Symbol.all_symbols.include?(:"I made it here!")
     end
   end
 

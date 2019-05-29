@@ -185,3 +185,5 @@ Array slicing works for strings also in the same manner. `String#split` works as
 ## Koan 8: Symbols
 
 Symbols are singletons. Method names are symbols. Identifiers are also symbols.
+
+Passing a symbol literal to `Symbol#all_symbols#include` will always be true because the symbol literal exists.
