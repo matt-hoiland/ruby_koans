@@ -117,3 +117,7 @@ Oddly, a negative value, doesn't do much:
 Ranges are weird, dude.
 
 Arrays can be heterogeneous. They also have methods for deque operations. I wonder what their time-space complexities are.
+
+## Kaon 5: Array Assignment
+
+Arrays can be destructured! Coolio!
