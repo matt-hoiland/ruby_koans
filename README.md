@@ -216,7 +216,7 @@ Some notes:
 - Methods return the value of the last evaluated expression if not explicitly declared
 - Using explicit receivers is involved in determining access permissions
 
-## Koan 9: Keyword Arguments
+## Koan 11: Keyword Arguments
 
 There are 3 kinds of arguments a method can have in that order:
 
@@ -227,5 +227,14 @@ There are 3 kinds of arguments a method can have in that order:
 All of these types can also be keyword, put after the non-keyword arguments
 
 - Required: `d:`
-- Optional: `e: 5`
+- Optional: `e: 5`, unlike optional args, these can be mixed with required kwargs
 - Variadic: `**f` of type `Hash`
+
+## Koan 12: Constants
+
+Here we introduce namespacing paths:
+
+```ruby
+::TopLevelName
+Namespace::Class::InnerClass::Constant
+```
