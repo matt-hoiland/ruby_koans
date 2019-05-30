@@ -215,3 +215,17 @@ Some notes:
 - Arguments can be defaulted
 - Methods return the value of the last evaluated expression if not explicitly declared
 - Using explicit receivers is involved in determining access permissions
+
+## Koan 9: Keyword Arguments
+
+There are 3 kinds of arguments a method can have in that order:
+
+- Required: `a`
+- Optional: `b = 2`
+- Variadic: `*c` of type `Array`
+
+All of these types can also be keyword, put after the non-keyword arguments
+
+- Required: `d:`
+- Optional: `e: 5`
+- Variadic: `**f` of type `Hash`
