@@ -328,3 +328,7 @@ matt = Person.new
 matt.name = "Matt"
 puts matt.name
 ```
+
+## Koan 19: Open Classes
+
+Pretty simple. Classes can be extended very easily. They must be properly scoped.
