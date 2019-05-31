@@ -252,3 +252,9 @@ New to me structures:
 ## Koan 14: True and False
 
 Boolean logic, pretty fundamental. `nil` is falsey, and all other values are `truthy`.
+
+## Koan 15: Exceptions
+
+OBJECTS KNOW THEIR ENTIRE INHERITANCE ANCESTRY!!!!
+
+- `begin...rescue...ensure` seems equivalent to `try...catch...finally`
