@@ -258,3 +258,13 @@ Boolean logic, pretty fundamental. `nil` is falsey, and all other values are `tr
 OBJECTS KNOW THEIR ENTIRE INHERITANCE ANCESTRY!!!!
 
 - `begin...rescue...ensure` seems equivalent to `try...catch...finally`
+
+## Koan 16: Iteration
+
+How are blocks/procedures passed to methods?
+
+- `Array#each` => for each
+- `Array#collect` => map
+- `Array#select` and `Array#find_all` => filter
+- `Array#find` === `Array#find_all[0]`
+- `Array#inject` => reduce
