@@ -336,3 +336,5 @@ Pretty simple. Classes can be extended very easily. They must be properly scoped
 ## Koan 20: Inheritance
 
 Everything works as I expect, except `super`. It appears to be a reference to the super's method and not the super's class.
+
+## Koan 21: Modules
