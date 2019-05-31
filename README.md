@@ -238,3 +238,13 @@ Here we introduce namespacing paths:
 ::TopLevelName
 Namespace::Class::InnerClass::Constant
 ```
+
+## Koan 13: Control Statements
+
+All statements evaluate to values.
+
+New to me structures:
+
+- `unless` like `if !`
+- `next` like `continue`
+- `Integer#times`. Would you even consider that a "statement"
