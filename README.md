@@ -248,3 +248,7 @@ New to me structures:
 - `unless` like `if !`
 - `next` like `continue`
 - `Integer#times`. Would you even consider that a "statement"
+
+## Koan 14: True and False
+
+Boolean logic, pretty fundamental. `nil` is falsey, and all other values are `truthy`.
