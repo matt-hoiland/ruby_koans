@@ -1,3 +1,1 @@
-puts Array.ancestors
-puts
-puts Hash.ancestors
+puts :upcase.to_proc.inspect

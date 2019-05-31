@@ -268,3 +268,13 @@ How are blocks/procedures passed to methods?
 - `Array#select` and `Array#find_all` => filter
 - `Array#find` === `Array#find_all[0]`
 - `Array#inject` => reduce
+
+## Koan 17: Blocks
+
+Blocks seem to be single little callbacks, only one call back passed to a function, bound to the `yield` keyword. `block_given?` is what?!
+
+Blocks close upon variables in their defining scope.
+
+`lambda` is introduced!
+
+Methods can have block arguments defined explicitly. Can a single method take multiple blocks?
