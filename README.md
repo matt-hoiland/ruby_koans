@@ -278,3 +278,17 @@ Blocks close upon variables in their defining scope.
 `lambda` is introduced!
 
 Methods can have block arguments defined explicitly. Can a single method take multiple blocks?
+
+Blocks can be used to execute within a context managed by a method taking care of setting up the context and tearing it down when done.
+
+```ruby
+def sandwhich(&block)
+  cnx = set_up_context()
+  block.call(cnx)
+  tear_down_context(cnx)
+end
+
+sandwhich do |cnx|
+  # perform action requiring `cnx`
+end
+```
