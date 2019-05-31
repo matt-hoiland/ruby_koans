@@ -292,3 +292,39 @@ sandwhich do |cnx|
   # perform action requiring `cnx`
 end
 ```
+
+## Koan 18: Classes
+
+Classes can have instance variables, but they do not have properties, only methods. Therefore accessing instance variables must be facilitated by methods. There is a fancy `#instance_variables` which retrieves and array of symbols corresponding to the instance variables names.
+
+There is also `#instance_variable_get` and `#instance_variable_set` which take a symbol (in set's version, also a value) and accesses the variable.
+
+Accessor methods can be defined by the programmer:
+
+```
+class Person
+  def name # getter
+    @name
+  end
+
+  def name=(name) # setter
+    @name = name
+  end
+end
+
+matt = Person.new
+matt.name = "Matt"
+puts matt.name
+```
+
+Or automatically through `attr_accessor` or `attr_reader`
+
+```ruby
+class Person
+  attr_accessor :name
+end
+
+matt = Person.new
+matt.name = "Matt"
+puts matt.name
+```
