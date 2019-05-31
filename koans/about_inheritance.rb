@@ -82,4 +82,20 @@ class AboutInheritance < Neo::Koan
     end
   end
 
+  # My Tests
+
+  class BigDog < Dog
+    def growl
+      bark + ", GROWL"
+    end
+  end
+
+  # It may not work cross method, but since BigDog inherits the #growl method
+  # it can call it!
+
+  def test_big_dog
+    maya = BigDog.new("Maya")
+    assert_equal "WOOF, GROWL", maya.growl
+  end
+
 end
