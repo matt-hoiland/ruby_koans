@@ -338,3 +338,9 @@ Pretty simple. Classes can be extended very easily. They must be properly scoped
 Everything works as I expect, except `super`. It appears to be a reference to the super's method and not the super's class.
 
 ## Koan 21: Modules
+
+Modules are a completely new concept to me. I've never seen them before in OOP. I have some questions:
+
+- Can multiple modules be included?
+- How does it affect inheritance?
+- What order are methods overridden when using both strategies?
