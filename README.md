@@ -352,3 +352,11 @@ Modules are a completely new concept to me. I've never seen them before in OOP. 
 Individual instances can be extended! Oh my!
 
 Class methods are just extensions made directly on the class object.
+
+## Koan 24: Message Passing
+
+Message passing is related to function calls.
+
+`#method_missing` can be overridden to catch all calls to non-existant methods.
+
+If `#method_missing` is overridden, `#respond_to?` should also be overridden to match behavior.
