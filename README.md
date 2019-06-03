@@ -344,3 +344,5 @@ Modules are a completely new concept to me. I've never seen them before in OOP. 
 - Can multiple modules be included?
 - How does it affect inheritance?
 - What order are methods overridden when using both strategies?
+
+## Koan 22: Scope
